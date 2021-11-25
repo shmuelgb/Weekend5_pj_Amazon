@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+}
+
+@font-face {
+  font-family: "Amazon-amber";
+  src: url(/styles/fonts/AmazonUIFont-amazonember_rg-cc7ebaa05a2cd3b02c0929ac0475a44ab30b7efa._V2_.woff2);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.nav-button {
+  border: 1px transparent solid;
+  border-radius: 2px;
+}
+
+.nav-button:hover {
+  border-color: white;
+}
