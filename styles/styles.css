@@ -491,6 +491,7 @@ nav a {
   border: transparent;
   cursor: pointer;
   background-color: #f7ca00;
+  opacity: 0.8;
 }
 .main_product-info_right_avalibilty_button2 {
   display: block;
@@ -501,4 +502,12 @@ nav a {
   border: transparent;
   cursor: pointer;
   background-color: #fa8900;
+  opacity: 0.9;
+}
+
+.main_product-info_right_avalibilty_button1:hover {
+  opacity: 1;
+}
+.main_product-info_right_avalibilty_button2:hover {
+  opacity: 1;
 }
