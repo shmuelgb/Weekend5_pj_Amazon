@@ -1,12 +1,16 @@
+body {
+  font-family: "Amazon-amber";
+}
+
 .top-nav {
   display: flex;
   height: 60px;
   background-color: #131921;
-  font-family: "Amazon-amber";
 }
 
-.top-nav a {
+nav a {
   color: #fff;
+  font-family: "Amazon-amber";
 }
 
 .nav_left {
@@ -16,7 +20,6 @@
 
 .nav_left_logo {
   display: flex;
-  /* align-items: flex-end; */
   height: 50px;
   padding: 1px 8px 0 6px;
   margin: 1px;
@@ -62,7 +65,7 @@
 }
 
 .nav_search {
-  justify-content: space-between;
+  flex-grow: 1;
   height: 60px;
   margin: 0 10px;
   padding: 10px 4px 10px 3px;
@@ -98,8 +101,8 @@
 }
 
 .nav_search_fill {
+  flex-grow: 1;
   background-color: #fff;
-  width: 500px;
   height: 40px;
 }
 
@@ -137,6 +140,7 @@
 }
 
 .nav_right {
+  display: flex;
   margin-top: 2px;
   padding: 3px 0 0 0;
   font-size: 14px;
@@ -159,8 +163,249 @@
   background-position: 0 -130px;
 }
 
-.nav_right_flag_arrow {
+.nav_right_arrow {
   width: 5px;
   background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
   background-position: 0 1000px;
+}
+
+.nav_right_sign-in {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  padding-right: 9px;
+  padding-left: 9px;
+  height: 50px;
+}
+
+.nav_right_sign-in__msg {
+  display: inline-block;
+  color: white;
+  height: 14px;
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.nav_right_returns {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  padding-right: 9px;
+  padding-left: 9px;
+  height: 50px;
+}
+
+.nav_right_returns__upper {
+  display: inline-block;
+  color: white;
+  height: 14px;
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.nav_right_cart {
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: flex-end;
+  margin-right: 11px;
+  margin-left: 2px;
+  padding-right: 9px;
+  flex-flow: row nowrap;
+  padding: 0 9px 11px 10px;
+}
+
+.nav_right_cart_img {
+  background: url(/styles/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+  background-position: -10px -340px;
+  width: 38px;
+  height: 26px;
+}
+
+.nav_right_cart_counter {
+  position: absolute;
+  color: #f08804;
+  top: 6px;
+  left: 28px;
+  font-size: 16px;
+}
+
+.top-scnd_nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 11px;
+  height: 39px;
+  background-color: #232f3e;
+  padding-right: 10px;
+}
+
+.top-scnd_nav_left {
+  display: flex;
+}
+
+.top-scnd_nav_hamburger {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 9px 8px 9px;
+  margin: 5px 0 6px 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.top-scnd_nav_hamburger_img {
+  background: url(/styles/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+  width: 17px;
+  height: 14px;
+  background-position: -172px -255px;
+  margin-right: 5px;
+}
+
+.top-scnd_nav_button {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 6px 0;
+  padding: 8px 9px;
+  font-size: 14px;
+}
+
+.header_banner {
+  display: flex;
+  justify-content: center;
+}
+
+.back-button {
+  font-size: 12px;
+  color: #565959;
+  padding-left: 18px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  min-width: 996px;
+  padding: 14px 18px 18px;
+
+  height: 100vh;
+}
+
+.main_images_ul {
+}
+
+.main_images_ul li {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid grey;
+  margin-bottom: 8px;
+}
+
+.main_images_ul li input {
+  border: none;
+  text-indent: -9999px;
+  height: 50px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.main_images_img1 input {
+  background: url(/styles/images/41V5bHk7xhL._AC_SR38\,50_.jpg) no-repeat;
+}
+.main_images_img2 input {
+  background: url(/styles//images/51GL8-OWJ-L._AC_SR38\,50_.jpg) no-repeat;
+}
+.main_images_img3 input {
+  background: url(/styles/images/51Bva+tHqOL._AC_SR38\,50_.jpg) no-repeat;
+}
+.main_images_img4 input {
+  background: url(/styles/images/419qjsQmT5L._AC_SR38\,50_.jpg) no-repeat;
+}
+
+.main_images_ul li::after {
+  content: "";
+  height: 390px;
+  width: 500px;
+  position: absolute;
+  left: 100px;
+}
+
+.main_images_ul li:nth-child(1) {
+  overflow: initial;
+}
+
+.main_images_img1::after {
+  top: 100px;
+  background: url(/styles/images/41V5bHk7xhL._AC_.jpg) no-repeat;
+}
+.main_images_img2::after {
+  top: -20px;
+  background: url(/styles//images/product_img_2.jpg) no-repeat center
+    center/cover;
+}
+.main_images_img3::after {
+  top: -50px;
+  background: url(/styles//images/product_img_3_.jpg) no-repeat;
+}
+.main_images_img4::after {
+  top: -100px;
+  background: url(/styles//images/product_img_4_.jpg) no-repeat;
+}
+
+.main_images_ul li:hover {
+  overflow: initial;
+  border: 1px orange solid;
+}
+
+.main_product-info {
+  display: flex;
+  height: 80vh;
+  width: 790px;
+  /* background-color: rgb(218, 227, 230); */
+}
+
+.main_product-info_left {
+  padding: 1px;
+  width: 475px;
+  color: #0f1111;
+}
+
+.main_product-info_left_header h1 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+}
+
+.main_product-info a {
+  color: #007185;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main_product-info a:hover {
+  color: #c7511f;
+}
+
+.main_product-info_left_header-a {
+  display: block;
+}
+
+.main_product-info_left_header_ratings {
+  display: flex;
+  align-self: flex-end;
+  border-bottom: 1px solid grey;
+}
+
+.stars5 {
+  display: inline-block;
+  height: 18px;
+  width: 110px;
+  background: url(/styles/images/star.png);
 }
