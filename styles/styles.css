@@ -36,6 +36,7 @@ nav a {
 
 .nav_left_location {
   display: flex;
+  width: auto;
   margin: 5px 2px 5px 2px;
   padding: 0 9px 0 9px;
 }
@@ -298,7 +299,7 @@ nav a {
   height: 100vh;
 }
 
-.main_images_ul {
+.main_images_c {
 }
 
 .main_images_ul li {
@@ -366,8 +367,9 @@ nav a {
 
 .main_product-info {
   display: flex;
+  justify-content: flex-end;
   height: 80vh;
-  width: 790px;
+  width: 770px;
   /* background-color: rgb(218, 227, 230); */
 }
 
@@ -375,12 +377,17 @@ nav a {
   padding: 1px;
   width: 475px;
   color: #0f1111;
+  font-size: 14px;
 }
 
 .main_product-info_left_header h1 {
   font-weight: 400;
   font-size: 24px;
   margin: 0;
+}
+
+.main_product-info b {
+  color: #0f1111;
 }
 
 .main_product-info a {
@@ -400,7 +407,9 @@ nav a {
 .main_product-info_left_header_ratings {
   display: flex;
   align-self: flex-end;
-  border-bottom: 1px solid grey;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 14px;
 }
 
 .stars5 {
@@ -408,4 +417,88 @@ nav a {
   height: 18px;
   width: 110px;
   background: url(/styles/images/star.png);
+}
+
+.main_product-info_left_price {
+  display: flex;
+}
+.main_product-info_left_price_header {
+  margin-right: 5px;
+  color: #565959;
+}
+
+.price {
+  color: #b12704;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.import-fees {
+  color: #565959;
+}
+
+.main_product-info_left_text ul {
+  list-style: initial;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main_product-info_right {
+  padding: 14px 18px;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  width: 244px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+.main_product-info_right .price {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.main_product-info_right p {
+  margin-bottom: 12px;
+}
+
+.main_product-info_right_location a {
+  font-size: 12px;
+}
+
+.main_product-info_right_location_icon {
+  display: inline-block;
+  min-width: 16px;
+  height: 14px;
+  margin-right: 5px;
+  margin-top: 2px;
+  background: url(/styles/images/location_icon.png) no-repeat center center;
+}
+
+.main_product-info_right_avalibilty {
+  color: #007600;
+  font-size: 18px;
+}
+
+.main_product-info_right_avalibilty_button1 {
+  display: block;
+  border-radius: 20px;
+  width: 100%;
+  padding: 8px 0px;
+  margin-bottom: 5px;
+  border: transparent;
+  cursor: pointer;
+  background-color: #f7ca00;
+}
+.main_product-info_right_avalibilty_button2 {
+  display: block;
+  border-radius: 20px;
+  width: 100%;
+  padding: 8px 0px;
+  margin-bottom: 5px;
+  border: transparent;
+  cursor: pointer;
+  background-color: #fa8900;
 }

@@ -31,3 +31,8 @@ input:focus {
 .nav-button:hover {
   border-color: white;
 }
+
+b {
+  font-weight: 700;
+  font-size: 14px;
+}
